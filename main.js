@@ -176,10 +176,10 @@ function main() {
     const objLoader = new OBJLoader();
     const mtlLoader = new MTLLoader();
     let mill;
-    mtlLoader.load('resources/models/windmill/PUSHILIN_windmill.mtl', (mtl) => {
+    mtlLoader.load('resources/models/Windmill/PUSHILIN_windmill.mtl', (mtl) => {
         mtl.preload();
         objLoader.setMaterials(mtl);
-        objLoader.load('resources/models/windmill/PUSHILIN_windmill.obj', (root) => {
+        objLoader.load('resources/models/Windmill/PUSHILIN_windmill.obj', (root) => {
             scene.add(root);
             mill = root;
         });
