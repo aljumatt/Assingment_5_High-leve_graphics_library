@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assingment 5 high level grpahics</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .split {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .split>div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@v0.184.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.184.0/examples/jsm/"
+  }
+}
+</script>
+
+<body>
+    <canvas id="c"></canvas>
+    <div class="split">
+        <div id="view1" tabindex="1"></div>
+        <div id="view2" tabindex="2"></div>
+    </div>
+    <div id="loading">
+        <div class="progress">
+            <div class="progressbar"></div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+
+    for wow factor added the GUI to let you controll the lights and camera, as well as implementing the orthographic
+    camera on the left
+</body>
+
+</html>
